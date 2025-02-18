@@ -1,6 +1,6 @@
 sentence_transformers==3.4.1
 faiss-cpu==1.10.0
-numpy==2.2.2
+numpy==1.26.0
 pandas==2.2.3
 pyodbc==5.2.0
 ipykernel==6.29.4
