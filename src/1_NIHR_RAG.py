@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import vector_store as vs
 
 # Set a tab title
 st.set_page_config(page_title="NIHR RAG")
@@ -61,7 +62,11 @@ st.markdown("""For example:
 
 problem = st.text_input("What question would you want to answer with this data?", key="problem")
 
+button_run_pressed = st.button("load data")
 
+if button_run_pressed:
+
+    st.write(vs.display_info())
 
 # Function to generate prompt feedback (replace with actual API call logic)
 def get_better_prompt(original_prompt):
