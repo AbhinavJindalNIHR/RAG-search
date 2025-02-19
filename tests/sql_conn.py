@@ -7,8 +7,8 @@ uid = input("Username: ")
 pwd = input("Password: ")
 
 connection = pyodbc.connect('DRIVER={SQL Server};'
-                            'SERVER=52.17.58.152;'
-                            'DATABASE=CPMS_BI;'
+                            'SERVER=;'
+                            'DATABASE=;'
                             'UID=' + uid + ';'
                             'PWD=' + pwd + ';'
                            )
