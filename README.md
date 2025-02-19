@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3318c76b-5100-48db-a25a-90cc28b1a9cd)
+![image]
 
 
 # The Ultimate Python Project Template
