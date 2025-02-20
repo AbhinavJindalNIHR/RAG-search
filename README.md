@@ -25,6 +25,14 @@ Consider the [DeReLiCT Code](https://derelict.streamlit.app/) principles when de
 
 ![improvement](https://github.com/user-attachments/assets/eb1e9c17-794c-42d5-b377-2dbcdce5036c)
 
+# Terms of use
+
+- [Streamlit](https://streamlit.io/)
+- [Hugging Face](https://huggingface.co/)
+- [FAISS](https://github.com/facebookresearch/faiss)
+- [Sentence-transformers](https://github.com/UKPLab/sentence-transformers)
+
+
 # Guidance
 
 Some key commands/directions for building your project are listed here. See further details on the [wiki](https://github.com/murphyqm/python-project-template/wiki).
