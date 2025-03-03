@@ -1,48 +1,37 @@
-![image]
 
+![logo_NIHR](https://github.com/user-attachments/assets/036c073c-4158-4d80-859d-132a4ebf3bba)
 
-# The Ultimate Python Project Template
+# Semantic Search
 
-You can create your own version of this repository by clicking the `Use Template` option.
+As the following data model and process flow diagrams will explain, this program makes a call to NIHR RDN data warehouse through a secure connection. 
+After some necessary pre-processing of data using pandas and numpy, it then converts the text fields into sentence embeddings vectors using sentence-transformer. 
+The converted vectors are then stored in the FAISS vector store for seamless querying. 
+Afterwards, a user or an analyst uses the front-end streamlit web-app to input a readable query (e.g. ‘Show me research around mental health’) 
+AND the number of records to be fetched. The model then compares the user input against the vector store using k-nearest neighbours approach to produce a list of research studies, along with a rank(lower is better) and a similarity score(lower is better). 
 
-You can set the name of your new repository to your Python project name. See [our webapp](https://package-your-python.streamlit.app/) for details on choosing a package and project name.
-
-The contents of this ReadMe are replicated on the [wiki here](https://github.com/murphyqm/python-project-template/wiki/Copy-of-the-ReadMe-file), so you can delete this and replace it with your own content.
-
-GitHub action workflows are provided in the folder `Example workflows`; these will need to be moved to a `.github/workflows` directory to be used, and will need to be updated to match your Python package name.
 
 ## Authors
 
-- Ahinav Jindal, based off a template from [Dr Maeve Murphy Quinlan](https://github.com/murphyqm)
+- Abhinav Jindal, based off a template from [Dr Maeve Murphy Quinlan](https://github.com/murphyqm)
 
-## Launch in codespaces
 
-This repository contains a `devcontainer.json` file, which includes details to set up a cloud virtual machine in GitHub codespaces.
+# Data flow diagram
+![Screenshot 2025-02-20 202954](https://github.com/user-attachments/assets/6f6eed65-6db9-496f-85f0-219267b27b4d)
 
-Once you launch the codespace from your repository (it will take a while to set up), you will have a view that matches the app VSCode, including a terminal
-window at the bottom of the screen, which allows you to interact with the virtual machine.
-
-If you use `pwd` to check the working directory, you will get `/workspaces/YOUR-REPO-NAME`: you are positioned inside the git repository folder. This is essentially
-a local clone of the repository on a virtual machine; you will have to use git as your would on your desktop (such as pushing changes to `origin BRANCH-NAME` from the terminal).
-
-Once launched, you can generate a basic project layout following the instructions [here](https://package-your-python.streamlit.app/).
-
-# Step-by-step: use this repository to build a Python package
-
-These steps assume you have already planned your Python project and brainstormed how you are going to meet your requirements, picked a name, created a repository from this template in your account!
-
-1. Launch this dev container in codespaces. Familiarise yourself with the VSCode interface and using git from inside this virtul machine.
-2. Install any required conda environments.
-3. Create your package folder organisation using [this tool](https://package-your-python.streamlit.app/); check your license and README.md.
-4. Write your code and your tests: you can take a test-driven development approach, or write your unit tests and integration tests after your functions.
-5. Generate your docstrings (there are a variety of tools installed in your VSCode env to help with this).
-6. Run tests using `pytest` (installed in the `packaging-env` for you).
-7. Format your code with `black`  (installed in the `packaging-env` for you).
-8. Create your documentation with `mkdocs` and host on GitHub pages.
-9. Create a basic GitHub Action workflow to test your code.
-10. Create a release and use a GitHub action workflow to build your code.
 
 Consider the [DeReLiCT Code](https://derelict.streamlit.app/) principles when designing your project.
+
+# Future improvements
+
+![improvement](https://github.com/user-attachments/assets/eb1e9c17-794c-42d5-b377-2dbcdce5036c)
+
+# Terms of use
+
+- [Streamlit](https://streamlit.io/)
+- [Hugging Face](https://huggingface.co/)
+- [FAISS](https://github.com/facebookresearch/faiss)
+- [Sentence-transformers](https://github.com/UKPLab/sentence-transformers)
+
 
 # Guidance
 
@@ -74,10 +63,6 @@ git push origin NAME # push local commits to the remote branch tracking the bran
 ```
 
 ## Essential conda commands
-
-The devcontainer/codespaces virtual machine comes preloaded with `miniforge`, an open source alternative to anaconda with the fast
-libmamba solver available. You use this in the same way you would conda from your local machine. Your codespaces machine
-comes with a basic Python packaging environment prebuilt.
 
 ```bash
 # from terminal/outside a conda env
