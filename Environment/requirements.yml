@@ -16,3 +16,4 @@ dependencies:
 - streamlit
 - matplotlib_scalebar
 - plotly
+- dotenv

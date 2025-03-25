@@ -36,14 +36,14 @@ st.logo(logo_img, link="https://sense.odp.nihr.ac.uk/public/", icon_image=None)
 # )
 # Welcome message
 st.markdown("""
-Welcome to NIHR RAG - Your repository for NIHR supported research across the UK
+Welcome to NIHR Research Semantic Search - Your repository for NIHR supported research across the UK
 
 **Please Note:**
 
 * For best results, ensure your prompts relevant health data.
 * Please do not upload personally identifiable information.
 
-We're here to help you discover healthcare research around the UK. Feel free to ask questions to inform results from the NIHR Open Data.
+We're here to help you discover healthcare research around the UK. Feel free to ask questions to inform results from the NIHR RDN.
 """)
 
 #experimentally removed to be replaced with background image variant on top of the program
@@ -162,8 +162,9 @@ st.markdown("""<hr style="border-color: #e0e0e0; height: 1px; background-image: 
 # Section for choosing data source
 st.subheader("Find out more about the platform")
 
-st.markdown("""
- _*This is a proof of concept built using Google VertexAI as part of the NIHR AI Hackathon, Sep 2024._
 
-For feedback or more information, please contact us at inforequest@nihr.ac.uk
-""")
+# st.markdown("""
+#  _*This is a proof of concept built using Google VertexAI as part of the NIHR AI Hackathon, Sep 2024._
+
+# For feedback or more information, please contact us at inforequest@nihr.ac.uk
+# """)
